@@ -1,0 +1,40 @@
+<!-- Tile.xml -->
+<component name="Tile" extends="Group">
+    <interface>
+        <field id="itemContent" type="node" onChange="showcontent"/>
+        <field id="focusPercent" type="float" onChange="showfocus"/>
+    </interface>
+    
+    <children>
+        <Poster
+            id="image"
+            width="300"
+            height="169"
+            uri="pkg:/images/DEET_Image.png"
+        />
+        <Label
+            id="title"
+            text="Title Placeholder"
+            color="0xFFFFFF"
+            translation="[0, 189]"
+        />
+        <Label
+            id="subtitle"
+            text="Subtitle placeholder text goes here Subtitle placeholder text goes here Subtitle placeholder text goes here"
+            color="0xAAAAAA"
+            width="300"
+            wrap="true"
+            maxLines="2"
+            translation="[0, 213]"
+        />
+        <Rectangle
+            id="opacityOverlay"
+            width="300"
+            height="169"
+            color="&h00000080"
+            visible="true"
+        />
+    </children>
+
+    <script type="text/brightscript" uri="Tile.brs" />
+</component>
