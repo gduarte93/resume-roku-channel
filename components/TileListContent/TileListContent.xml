@@ -6,13 +6,47 @@
     <children>
         <ContentNode title="Tile List">
             <ContentNode
-                title="Title 1"
+                HDPosterUrl="pkg:/images/DEET_image.png"
+                title="Sr Software Engineer"
+                description="2022 - present"
             />
             <ContentNode
-                title="Title 2"
+                HDPosterUrl="pkg:/images/dtci_image.webp"
+                title="Software Engineer II"
+                description="2018 - 2022"
             />
             <ContentNode
-                title="Title 3"
+                HDPosterUrl="pkg:/images/espn_image.webp"
+                title="Software Engineer"
+                description="2016 - 2018"
+            />
+            <ContentNode
+                HDPosterUrl="pkg:/images/miraclemile_image.jpeg"
+                title="Web Developer"
+                description="2014 - 2016"
+            />
+            <ContentNode
+                HDPosterUrl="pkg:/images/swamp_image.jpeg"
+                title="BS, Computer Science"
+                description="2012 - 2015"
+            />
+            <ContentNode
+                
+            />
+            <ContentNode
+                
+            />
+            <ContentNode
+                
+            />
+            <ContentNode
+                
+            />
+            <ContentNode
+                
+            />
+            <ContentNode
+                
             />
         </ContentNode>
     </children>

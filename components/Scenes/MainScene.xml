@@ -1,23 +1,34 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <component name="MainScene" extends="Scene"> 
 	<children>
-      <RowList
-	  	id="tileRow1"
-		translation="[0, 0]"
-		itemComponentName="Tile"
-		numRows="1"
-		showRowLabel="[true]"
+		<Poster
+			id="backgroundImage"
+			loadDisplayMode="scaleToZoom"
+			translation="[0, -200]"
+		/>
 
-		itemSize="[1500, 270]"
-		rowItemSize="[[300, 169]]"
-		itemSpacing="[0, 0]"
-		rowItemSpacing="[[20, 0]]"
+		<!-- TODO MaskGroup for black gradient overlay under backgroundImage -->
 
-		drawFocusFeedback="true"
-		drawFocusFeedbackOnTop="true"
-		rowFocusAnimationStyle="floatingFocus"
-		vertFocusAnimationStyle="fixedFocus"
-	  />
+		<RowList
+			id="tileRow1"
+			translation="[0, 0]"
+			itemComponentName="Tile"
+			numRows="1"
+			showRowLabel="[true]"
+			rowLabelOffset="[[0, 16]]"
+
+			itemSize="[1500, 270]"
+			rowItemSize="[[300, 169]]"
+			itemSpacing="[0, 0]"
+			rowItemSpacing="[[28, 0]]"
+
+			drawFocusFeedback="true"
+			drawFocusFeedbackOnTop="true"
+			rowFocusAnimationStyle="floatingFocus"
+			vertFocusAnimationStyle="fixedFocus"
+
+			translation="[20, 400]"
+		/>
     </children>
 
 	<script type="text/brightscript" uri="MainScene.brs"></script>
