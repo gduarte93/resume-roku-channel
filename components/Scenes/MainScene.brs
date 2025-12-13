@@ -15,6 +15,7 @@ sub init()
 
     m.moreInfoModal = m.top.findNode("moreInfoModal")
     m.moreInfoModal.visible = false
+    m.moreInfoModal.translation = [0, 100]
 end sub
 
 ' TODO: on OK bring up modal
@@ -98,6 +99,7 @@ sub toggleInfoModal()
 			]
             m.moreInfoModal.visible = true
             m.moreInfoModal.setFocus(true)
+            ' TODO: add audio track (disney sound?, espn sound, city center sound, UF crowd/stadium sound, etc)
         end if
     end if
 end sub

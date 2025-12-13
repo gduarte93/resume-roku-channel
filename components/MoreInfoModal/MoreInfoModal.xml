@@ -17,9 +17,20 @@
     <children>
         <Rectangle
             id="background"
-            width="1000"
-            height="600"
+            width="1280"
+            height="500"
         />
+        <!-- <Animation
+            id="backgroundAnimation"
+            duration="0.8"
+            easeFunction="outQuartic"
+        >
+            <FloatFieldInterpolator
+                key="[0.0, 1.0]" 
+                keyValue="[0, 1280]" 
+                fieldToInterp="background.width"
+            />
+        </Animation> -->
 
         <Label
             id="title"
