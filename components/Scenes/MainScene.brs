@@ -96,6 +96,31 @@ sub toggleInfoModal()
 					description: "Was on the team responsible for the redesigned Watch web experience"
 				}
 			]
+            m.moreInfoModal.leftArray = [
+				{
+					title: "What I Do",
+					description: "With the transition from ESPN to DTCI, I got the opportunity to join the Site Development team. This team is focused on creating new features and products. And, because we are now part of DTCI, that means we have access to not just ESPN products, but to all of Disney’s global brands."
+				},
+				{
+					title: "Early On",
+					description: "One of my first projects here was in helping with the migration of ESPN from our old servers to AWS. This included updating our routes in haproxy with lua and regex, as well as adding test coverage for those new rules. I worked with other teams to help validate the new routes by running automated tests, allowing for rapid turn around."
+				},
+				{
+					title: "The Shift",
+					description: "After that project, my focus shifted away from ESPN, and towards other brands. It became more and more apparent that we were now a part of a much larger Disney organization."
+				}
+			]
+            m.moreInfoModal.rightArray = [
+				{
+					title: invalid,
+					description: "At ESPN we created our own front end framework based around Node, React, and MobX. A large goal for us was to migrate our other properties to the same stack. Getting everyone to use the same technology would allow for the ability to share code and components between brands." + chr(10) + chr(10) + "As part of this effort, I worked on migrating the ABC local news sites, abc.com, and disneynow.com, as well as helping with the migrations of National Geographic TV and FX."
+				},
+				{
+					title: "Recently",
+					description: "Most recently, I worked on the new redesigned version of ESPN Watch, using our latest React framework. There, I worked on the listings page, the roadblock page, the schedule page, and integrating analytics for page and video tracking."
+				}
+			]
+
             m.moreInfoModal.visible = true
             m.moreInfoModal.setFocus(true)
             ' TODO: add audio track (disney sound?, espn sound, city center sound, UF crowd/stadium sound, etc)

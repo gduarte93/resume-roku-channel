@@ -69,6 +69,7 @@ sub onClosedChange(event)
         for each node in m.nodeArray
             m.top.removeChild(node.title)
             m.top.removeChild(node.description)
+            m.top.removeChild(node.border)
         end for
         m.nodeArray = []
     end if

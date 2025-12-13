@@ -10,8 +10,8 @@
         <field id="subtitle" type="string" onChange="onSubtitleChange" />
         <field id="workTitle" type="string" onChange="onWorkTitleChange" />
         <field id="notesArray" type="roArray" onChange="onNotesArrayChange"/>
-        <field id="leftArray" type="roArray" />
-        <field id="rightArray" type="roArray" />
+        <field id="leftArray" type="roArray" onChange="onLeftArrayChange"/>
+        <field id="rightArray" type="roArray" onChange="onRightArrayChange"/>
     </interface>
     
     <children>
@@ -54,9 +54,9 @@
             font="font:LargeBoldSystemFont"
         />
 
-        <Notes
-            id="notes"
-        />
+        <Notes id="notes" />
+
+        <InfoContent id="infoContent" />
     </children>
 
     <script type="text/brightscript" uri="MoreInfoModal.brs" />

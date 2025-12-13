@@ -8,6 +8,7 @@ sub init()
     m.subtitle = m.top.findNode("subtitle")
     m.workTitle = m.top.findNode("workTitle")
     m.notes = m.top.findNode("notes")
+    m.infoContent = m.top.findNode("infoContent")
 
     m.title.font.size = HEADER_FONT_SIZE
     m.subtitle.font.size = HEADER_FONT_SIZE
@@ -75,11 +76,13 @@ end sub
 sub onVisibleChange(event)
     if event?.getData?() then
         m.notes.closed = false
+        m.infoContent.closed = false
         moveNode(m.notes, "right", 20)
         moveNode(m.notes, "bottom", 40)
         ' m.backgroundAnimation.control = "start"
     else
         m.notes.closed = true
+        m.infoContent.closed = true
         ' ? animateOut()
     end if
 end sub
@@ -87,4 +90,14 @@ end sub
 sub onNotesArrayChange()
     m.notes.notesArray = m.top.notesArray
     m.notes.color = m.top.mainColor
+end sub
+
+sub onLeftArrayChange()
+    m.infoContent.leftArray = m.top.leftArray
+    m.infoContent.color = m.top.mainColor
+end sub
+
+sub onRightArrayChange()
+    m.infoContent.rightArray = m.top.rightArray
+    m.infoContent.color = m.top.mainColor
 end sub
