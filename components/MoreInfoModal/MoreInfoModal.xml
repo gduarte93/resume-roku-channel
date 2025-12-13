@@ -1,0 +1,24 @@
+<!-- MoreInfoModal.xml -->
+<component name="MoreInfoModal" extends="Group">
+    <interface>
+        <!-- <field id="itemContent" type="node" onChange="showcontent"/>
+        <field id="focusPercent" type="float" onChange="showfocus"/> -->
+        <field id="title" type="string" />
+        <field id="subtitle" type="string" />
+        <field id="workTitle" type="string" />
+        <field id="notesArray" type="array" />
+        <field id="leftArray" type="array" />
+        <field id="rightArray" type="array" />
+    </interface>
+    
+    <children>
+        <Rectangle
+            id="background"
+            width="1000"
+            height="600"
+            color="0x0000FF"
+        />
+    </children>
+
+    <script type="text/brightscript" uri="MoreInfoModal.brs" />
+</component>

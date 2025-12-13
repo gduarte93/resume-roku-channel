@@ -9,15 +9,19 @@ sub init()
     m.top.setFocus(true)
     m.rowlist.setFocus(true)
     m.rowlist.observeField("rowItemFocused", "onRowItemFocused")
-    ' m.rowlist.observeField("itemSelected", "onItemSelected")
+    m.rowlist.observeField("itemSelected", "onItemSelected")
 
     m.previewLabel.font.size = 16
+
+    m.moreInfoModal = m.top.findNode("moreInfoModal")
+    m.moreInfoModal.visible = false
 end sub
 
 ' TODO: on OK bring up modal
 sub onItemSelected(itemSelected)
-    print "item selected:"
-    print Str(itemSelected)
+    if m.moreInfoModal <> invalid
+        toggleInfoModal()
+    end if
 end sub
 
 sub onRowItemFocused(event)
@@ -58,19 +62,28 @@ sub onRowItemFocused(event)
 end sub
 
 function onKeyEvent(key as String, press as Boolean) as Boolean
-    ' if press then
-    '     if m.rowList <> invalid
-    '         print key
-    '         print m.rowList.itemSelected
-    '         if key = "right" AND m.rowList.itemSelected > 2
-    '             m.rowList.rowFocusAnimationStyle = "fixedFocus"
-    '         end if
-
-    '         ' if (key = "up") then
-    '         '     m.myLabel.font.size = m.myLabel.font.size + 5
-    '         ' else if (key = "down") then
-    '         '     m.myLabel.font.size = m.myLabel.font.size - 5
-    '         ' end if
-    '     end if
-    ' end if
+    handled = false
+    if press then
+        print key
+        if key = "back" then
+            if m.moreInfoModal?.visible then
+                toggleInfoModal()
+            end if
+            handled = true
+        end if
+    end if
+    return handled
 end function
+
+sub toggleInfoModal()
+    if m.moreInfoModal <> invalid
+        if m.moreInfoModal.visible then
+            m.moreInfoModal.visible = false
+            m.moreInfoModal.setFocus(false)
+            m.rowlist.setFocus(true)
+        else
+            m.moreInfoModal.visible = true
+            m.moreInfoModal.setFocus(true)
+        end if
+    end if
+end sub
