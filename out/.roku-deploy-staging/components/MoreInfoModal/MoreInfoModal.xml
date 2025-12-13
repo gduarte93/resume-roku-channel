@@ -3,12 +3,15 @@
     <interface>
         <!-- <field id="itemContent" type="node" onChange="showcontent"/>
         <field id="focusPercent" type="float" onChange="showfocus"/> -->
-        <field id="title" type="string" />
-        <field id="subtitle" type="string" />
-        <field id="workTitle" type="string" />
-        <field id="notesArray" type="array" />
-        <field id="leftArray" type="array" />
-        <field id="rightArray" type="array" />
+        <field id="title" type="string" onChange="onTitleChange" />
+        <field id="backgroundColor" type="color" onChange="onBackgroundColorChange"/>
+        <field id="mainColor" type="color" onChange="onMainColorChange"/>
+        <field id="secondaryColor" type="color" onChange="onSecondaryColorChange"/>
+        <field id="subtitle" type="string" onChange="onSubtitleChange" />
+        <field id="workTitle" type="string" onChange="onWorkTitleChange" />
+        <field id="notesArray" type="roArray" onChange="onNotesArrayChange"/>
+        <field id="leftArray" type="roArray" />
+        <field id="rightArray" type="roArray" />
     </interface>
     
     <children>
@@ -16,8 +19,31 @@
             id="background"
             width="1000"
             height="600"
-            color="0x0000FF"
         />
+
+        <Label
+            id="title"
+            width="1000"
+            translation="[200, 20]"
+            text="title"
+            font="font:LargeBoldSystemFont"
+        />
+        <Label
+            id="subtitle"
+            width="1000"
+            translation="[200, 40]"
+            text="subtitle"
+            font="font:LargeBoldSystemFont"
+        />
+        <Label
+            id="workTitle"
+            width="1000"
+            translation="[20, 200]"
+            text="workTitle"
+            font="font:LargeBoldSystemFont"
+        />
+
+        <!-- note labels -->
     </children>
 
     <script type="text/brightscript" uri="MoreInfoModal.brs" />

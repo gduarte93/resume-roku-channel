@@ -45,23 +45,13 @@
 
 		<MoreInfoModal
 			id="moreInfoModal"
+			backgroundColor="0xA4dEf9"
+			mainColor="0x444444"
+			secondaryColor="0xFFFFFF"
 			title="Direct-to-Consumer &amp; International"
 			subtitle="2018 - present"
 			workTitle="Software Engineer II - Front End"
-			notesArray="[
-				{
-					title: &quot;Location&quot;,
-					description: &quot;Bristol, CT&quot;
-				},
-				{
-					title: &quot;Brand Migrations&quot;,
-					description: &quot;Worked on migrating legacy sites for ABC, Disneynow, Nat Geo TV, and FX to our new tech stack&quot;
-				},
-				{
-					title: &quot;ESPN Watch&quot;,
-					description: &quot;Was on the team responsible for the redesigned Watch web experience&quot;
-				}
-			]"
+			notesArray=""
 			leftArray="[
 				{
 					title: &quot;What I Do&quot;,

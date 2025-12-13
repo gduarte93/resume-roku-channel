@@ -82,6 +82,20 @@ sub toggleInfoModal()
             m.moreInfoModal.setFocus(false)
             m.rowlist.setFocus(true)
         else
+            m.moreInfoModal.notesArray = [
+				{
+					title: "Location",
+					description: "Bristol, CT"
+				},
+				{
+					title: "Brand Migrations",
+					description: "Worked on migrating legacy sites for ABC, Disneynow, Nat Geo TV, and FX to our new tech stack"
+				},
+				{
+					title: "ESPN Watch",
+					description: "Was on the team responsible for the redesigned Watch web experience"
+				}
+			]
             m.moreInfoModal.visible = true
             m.moreInfoModal.setFocus(true)
         end if

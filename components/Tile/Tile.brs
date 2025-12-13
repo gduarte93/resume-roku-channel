@@ -14,10 +14,10 @@ sub init()
 end sub
 
 sub showcontent()
-    itemcontent = m.top.itemcontent
-    uri = itemcontent.HDPosterUrl
-    title = itemcontent.title
-    subtitle = itemcontent.secondaryTitle
+    itemContent = m.top.itemContent
+    uri = itemContent.HDPosterUrl
+    title = itemContent.title
+    subtitle = itemContent.secondaryTitle
 
     if uri = invalid OR uri = "" then uri = "pkg:/images/splash-screen_hd.jpg"
     if title = invalid OR title = "" then title = "[Title Placeholder]"
