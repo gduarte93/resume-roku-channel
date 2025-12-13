@@ -1,6 +1,6 @@
 sub init()
     m.NOTE_WIDTH = 200
-    m.NOTES_MARGIN = 20
+    m.NOTES_MARGIN = 10
 
     m.nodeArray = []
     m.top.observeField("closed", "onClosedChange")
@@ -10,6 +10,7 @@ sub onColorChange()
     for each node in m.nodeArray
         node.title.color = m.top.color
         node.description.color = m.top.color
+        node.border.color = m.top.color
     end for
 end sub
 
@@ -23,11 +24,11 @@ sub onNotesArrayChange()
 
         if m.nodeArray.Count() > 0 then
             lastNode = m.nodeArray.peek()
-            descTranslation = lastNode.description?.translation
-            descHeight = lastNode.description?.boundingRect?()?.height
+            borderTranslation = lastNode.border?.translation
+            borderHeight = lastNode.border?.height
 
-            if descTranslation <> invalid AND descHeight <> invalid then
-                newY = descTranslation[1] + descHeight + m.NOTES_MARGIN
+            if borderTranslation <> invalid AND borderHeight <> invalid then
+                newY = borderTranslation[1] + borderHeight + m.NOTES_MARGIN
                 title.translation = [0, newY]
             end if
         else
@@ -37,15 +38,27 @@ sub onNotesArrayChange()
         description = CreateObject("roSGNode", "Label")
         description.text = note.description
         description.width = m.NOTE_WIDTH
-        description.translation = [0, title.translation[1] + 14]
+        description.translation = [0, title.translation[1] + 16]
         description.font.size = 10
         description.wrap = true
         description.maxLines = 3
 
-        m.nodeArray.push({title: title, description: description})
+        border = CreateObject("roSGNode", "Rectangle")
+        border.width = m.NOTE_WIDTH
+        border.height = 1
+
+        descTranslation = description?.translation
+        descHeight = description?.boundingRect?()?.height
+        if descTranslation <> invalid AND descHeight <> invalid then
+            newY = descTranslation[1] + descHeight + m.NOTES_MARGIN
+            border.translation = [0, newY]
+        end if
+
+        m.nodeArray.push({title: title, description: description, border: border})
 
         m.top.appendChild(title)
         m.top.appendChild(description)
+        m.top.appendChild(border)
     end for
     onColorChange()
 end sub

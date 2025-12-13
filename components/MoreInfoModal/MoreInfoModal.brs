@@ -20,6 +20,33 @@ sub init()
     m.top.observeField("visible", "onVisibleChange")
 end sub
 
+' TODO: accept px and % values for distance
+sub moveNode(node, direction, distance)
+    nodeWidth = node.boundingRect?()?.width
+    nodeHeight = node.boundingRect?()?.height
+    parent = node.getParent()
+    parentWidth = parent.boundingRect?()?.width
+    parentHeight = parent.boundingRect?()?.height
+    
+    if direction = "left" then
+        node.translation = [distance, node.translation[1]]
+    end if
+
+    if direction = "top" then
+        node.translation = [node.translation[0], distance]
+    end if
+
+    if direction = "right" then
+        xPos = parentWidth - nodeWidth - distance
+        node.translation = [xPos, node.translation[1]]
+    end if
+
+    if direction = "bottom" then
+        yPos = parentHeight - nodeHeight - distance
+        node.translation = [node.translation[0], yPos]
+    end if
+end sub
+
 sub onBackgroundColorChange()
     m.background.color = m.top.backgroundColor
 end sub
@@ -48,6 +75,8 @@ end sub
 sub onVisibleChange(event)
     if event?.getData?() then
         m.notes.closed = false
+        moveNode(m.notes, "right", 20)
+        moveNode(m.notes, "bottom", 40)
         ' m.backgroundAnimation.control = "start"
     else
         m.notes.closed = true
@@ -55,29 +84,7 @@ sub onVisibleChange(event)
     end if
 end sub
 
-' TODO: probably move notes block to different custom component?
-'   OR just add array to global and calc translations
 sub onNotesArrayChange()
     m.notes.notesArray = m.top.notesArray
     m.notes.color = m.top.mainColor
-
-    ' NOTE_WIDTH = 100
-
-    ' for each note in m.top.notesArray
-    '     title = CreateObject("roSGNode", "Label")
-    '     title.text = note.title
-    '     title.width = NOTE_WIDTH
-    '     title.color = m.top.mainColor
-
-    '     description = CreateObject("roSGNode", "Label")
-    '     description.text = note.description
-    '     description.width = NOTE_WIDTH
-    '     description.color = m.top.mainColor
-
-    '     m.top.appendChild(title)
-    '     m.top.appendChild(description)
-
-    '     ' print note.title
-    '     ' print note.description
-    ' end for
 end sub
