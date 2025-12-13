@@ -18,7 +18,6 @@ sub init()
     m.moreInfoModal.translation = [0, 100]
 end sub
 
-' TODO: on OK bring up modal
 sub onItemSelected(itemSelected)
     if m.moreInfoModal <> invalid
         toggleInfoModal()

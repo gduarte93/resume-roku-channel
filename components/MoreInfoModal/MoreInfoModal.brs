@@ -7,6 +7,7 @@ sub init()
     m.title = m.top.findNode("title")
     m.subtitle = m.top.findNode("subtitle")
     m.workTitle = m.top.findNode("workTitle")
+    m.notes = m.top.findNode("notes")
 
     m.title.font.size = HEADER_FONT_SIZE
     m.subtitle.font.size = HEADER_FONT_SIZE
@@ -46,8 +47,10 @@ end sub
 
 sub onVisibleChange(event)
     if event?.getData?() then
+        m.notes.closed = false
         ' m.backgroundAnimation.control = "start"
     else
+        m.notes.closed = true
         ' ? animateOut()
     end if
 end sub
@@ -55,23 +58,26 @@ end sub
 ' TODO: probably move notes block to different custom component?
 '   OR just add array to global and calc translations
 sub onNotesArrayChange()
-    NOTE_WIDTH = 100
+    m.notes.notesArray = m.top.notesArray
+    m.notes.color = m.top.mainColor
 
-    for each note in m.top.notesArray
-        title = CreateObject("roSGNode", "Label")
-        title.text = note.title
-        title.width = NOTE_WIDTH
-        title.color = m.top.mainColor
+    ' NOTE_WIDTH = 100
 
-        description = CreateObject("roSGNode", "Label")
-        description.text = note.description
-        description.width = NOTE_WIDTH
-        description.color = m.top.mainColor
+    ' for each note in m.top.notesArray
+    '     title = CreateObject("roSGNode", "Label")
+    '     title.text = note.title
+    '     title.width = NOTE_WIDTH
+    '     title.color = m.top.mainColor
 
-        m.top.appendChild(title)
-        m.top.appendChild(description)
+    '     description = CreateObject("roSGNode", "Label")
+    '     description.text = note.description
+    '     description.width = NOTE_WIDTH
+    '     description.color = m.top.mainColor
 
-        ' print note.title
-        ' print note.description
-    end for
+    '     m.top.appendChild(title)
+    '     m.top.appendChild(description)
+
+    '     ' print note.title
+    '     ' print note.description
+    ' end for
 end sub

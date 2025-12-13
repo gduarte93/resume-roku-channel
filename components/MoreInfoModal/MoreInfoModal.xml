@@ -54,7 +54,9 @@
             font="font:LargeBoldSystemFont"
         />
 
-        <!-- note labels -->
+        <Notes
+            id="notes"
+        />
     </children>
 
     <script type="text/brightscript" uri="MoreInfoModal.brs" />
