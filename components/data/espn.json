@@ -1,5 +1,6 @@
 {
     "id": "espn",
+    "audio": "pkg:/components/audio/espn.mp3",
     "header": {
         "title": "ESPN",
         "subtitle": "2016 - 2018",

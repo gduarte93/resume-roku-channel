@@ -10,6 +10,7 @@
                 title="Sr Software Engineer"
                 secondaryTitle="2022 - present"
                 description="With the reorginazation to Disney Entertainment and ESPN Product & Technology, I am now on the News Frontend team, where I work as the ABC News release manager and additionally contribute to our 8 local stations as well as Good Morning America"
+                programID="/components/data/abcnews.json"
             />
             <ContentNode
                 HDPosterUrl="pkg:/images/dtci_image.webp"
@@ -38,24 +39,6 @@
                 secondaryTitle="2012 - 2015"
                 description="I graduated from the University of Florida (go Gators!) with a degree in Computer Science. This is where my passion for web development began, and where I spent many late nights trying to cram just one more feature into my assignments"
                 programID="/components/data/uf.json"
-            />
-            <ContentNode
-                
-            />
-            <ContentNode
-                
-            />
-            <ContentNode
-                
-            />
-            <ContentNode
-                
-            />
-            <ContentNode
-                
-            />
-            <ContentNode
-                
             />
         </ContentNode>
     </children>

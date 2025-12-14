@@ -1,5 +1,6 @@
 {
     "id": "disney",
+    "audio": "pkg:/components/audio/disney.mp3",
     "header": {
         "title": "Direct-to-Consumer & International",
         "subtitle": "2018 - 2022",

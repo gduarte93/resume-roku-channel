@@ -1,5 +1,6 @@
 {
     "id": "pixelsupply",
+    "audio": "pkg:/components/audio/train.mp3",
     "header": {
         "title": "Pixel Supply Co",
         "subtitle": "2014 - 2016",

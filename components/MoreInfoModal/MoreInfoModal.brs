@@ -32,8 +32,6 @@ sub moveNode(node, direction, distance, parent = invalid)
     
     parentWidth = parent.boundingRect?()?.width
     parentHeight = parent.boundingRect?()?.height
-
-    print parent
     
     if direction = "left" then
         node.translation = [distance, node.translation[1]]

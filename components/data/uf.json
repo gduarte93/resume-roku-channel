@@ -1,5 +1,6 @@
 {
     "id": "uf",
+    "audio": "pkg:/components/audio/uf.mp3",
     "header": {
         "title": "University of Florida",
         "subtitle": "2012-2015",

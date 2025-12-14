@@ -16,6 +16,13 @@
     
     <children>
         <Rectangle
+            id="overlay"
+            width="1280"
+            height="720"
+            color="0x00000099"
+            translation="[0, -100]"
+        />
+        <Rectangle
             id="background"
             width="1280"
             height="500"

@@ -16,6 +16,11 @@ sub init()
     m.moreInfoModal = m.top.findNode("moreInfoModal")
     m.moreInfoModal.visible = false
     m.moreInfoModal.translation = [0, 100]
+
+    m.audio = CreateObject("roSGNode", "Audio")
+    m.audioContent = CreateObject("roSGNode", "ContentNode")
+    m.audio.content = m.audioContent
+    m.top.appendChild(m.audio)
 end sub
 
 sub onItemSelected(itemSelected)
@@ -33,6 +38,10 @@ sub onItemSelected(itemSelected)
             m.moreInfoModal.backgroundColor = jsonObj.header?.backgroundColor
             m.moreInfoModal.mainColor = jsonObj.header?.info?.color?.primary
             m.moreInfoModal.secondaryColor = jsonObj.header?.info?.color?.secondary
+
+            m.audioContent.url = jsonObj.audio
+            m.audio.volume = 0.5
+            m.audio.control = "play"
         end if
         
         toggleInfoModal()
@@ -83,6 +92,8 @@ function onKeyEvent(key as String, press as Boolean) as Boolean
         if key = "back" then
             if m.moreInfoModal?.visible then
                 toggleInfoModal()
+                m.audio.control = "stop"
+                m.audio.control = "none"
             end if
             handled = true
         end if

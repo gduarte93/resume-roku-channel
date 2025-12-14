@@ -1,0 +1,68 @@
+{
+    "id": "abcnews",
+    "audio": "pkg:/components/audio/abcnews.mp3",
+    "header": {
+        "title": "Disney Entertainment & ESPN Technology",
+        "subtitle": "2022 - present",
+        "background": {
+            "small": "",
+            "medium": "",
+            "large": ""
+        },
+        "backgroundColor": "0x0C1D69",
+        "backgroundPosition": "bottom",
+        "info": {
+            "color": {
+                "primary": "0xFFFFFF",
+                "secondary": "0xFFFFFF",
+                "tertiary": "0xFFFFFF"
+            },
+            "title": "",
+            "description": "Senior Software Engineer",
+            "story": {
+                "column1": [
+                    {
+                        "title": "",
+                        "description": "Currently on the News Frontend team, where I work as the ABC News release manager, reviewing, merging, and deploying code to abcnews.go.com biweekly. Additionally I am an individual contributor to our 8 local stations as well as Good Morning America."
+                    },
+                    {
+                        "title": "Good Morning America Migration",
+                        "description": "As a senior engineer on the team I was the front end point of contact for our vendors working on the goodmorningamerica.com migration from Vue to our React framework. I held meetings to provide guidance and best practices, and answer any questions that they had."
+                    },
+                    {
+                        "title": "API Modernization",
+                        "description": "I was the frontend lead for the API modernization project. I worked with backend teams such as API, CMS, and Search to ensure data from the new endpoints came in as expected, and made any necessary data transformations in the client. As part of this project I created tickets for, and guided, two third party contractors."
+                    }
+                ],
+                "column2": [
+                    {
+                        "title": "Affiliate Station Homepage Redesign",
+                        "description": "I was also the frontend lead for the OTV homepage redesign project. I worked with product and design teams, setting up meetings to make sure their pixel perfect mocks were attained. I also worked with API teams to confirm the correct data schemas necessary for the new layout."
+                    },
+                    {
+                        "title": "Disney Media Player Migration",
+                        "description": "I worked alongside teammates to migrate our third party video player to our new in-house Disney Media Player. This was for ABC News and OTV stations."
+                    }
+                ]
+            }
+        },
+        "blurbs": [
+            {
+                "title": "Location",
+                "description": "Bristol, CT"
+            },
+            {
+                "title": "GMA Migration",
+                "description": "Guided third party vendors in our efforts to migrate goodmorningamerica.com from Vue to our React framework"
+            },
+            {
+                "title": "API Modernization & OTV Redesign",
+                "description": "Frontend Lead for the API modernization project, and OTV Homepage Redesign"
+            },
+            {
+                "title": "DMP Migration",
+                "description": "Migrated our old third party video player to the new Disney Media Player on ABC News and OTV"
+            }
+        ]
+    }
+}
