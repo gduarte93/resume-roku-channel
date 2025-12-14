@@ -40,7 +40,7 @@
 			rowFocusAnimationStyle="floatingFocus"
 			vertFocusAnimationStyle="fixedFocus"
 
-			translation="[20, 450]"
+			translation="[40, 450]"
 		/>
 
 		<MoreInfoModal

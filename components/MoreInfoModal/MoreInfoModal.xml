@@ -49,7 +49,7 @@
         <Label
             id="workTitle"
             width="1000"
-            translation="[20, 160]"
+            translation="[40, 80]"
             text="workTitle"
             font="font:LargeBoldSystemFont"
         />

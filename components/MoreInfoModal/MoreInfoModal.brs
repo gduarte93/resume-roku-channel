@@ -1,5 +1,5 @@
 sub init()
-    HEADER_FONT_SIZE = 18
+    HEADER_FONT_SIZE = 24
 
     m.top.setFocus(true)
 
@@ -22,12 +22,18 @@ sub init()
 end sub
 
 ' TODO: accept px and % values for distance
-sub moveNode(node, direction, distance)
+sub moveNode(node, direction, distance, parent = invalid)
     nodeWidth = node.boundingRect?()?.width
     nodeHeight = node.boundingRect?()?.height
-    parent = node.getParent()
+
+    if parent = invalid then
+        parent = node.getParent()
+    end if
+    
     parentWidth = parent.boundingRect?()?.width
     parentHeight = parent.boundingRect?()?.height
+
+    print parent
     
     if direction = "left" then
         node.translation = [distance, node.translation[1]]
@@ -79,10 +85,10 @@ sub onVisibleChange(event)
     if event?.getData?() then
         m.notes.closed = false
         m.infoContent.closed = false
-        moveNode(m.notes, "right", 20)
-        moveNode(m.notes, "bottom", 80)
-        moveNode(m.infoContent, "left", 200)
-        moveNode(m.infoContent, "bottom", 20)
+        moveNode(m.notes, "right", 40, m.background)
+        moveNode(m.notes, "bottom", 80, m.background)
+        moveNode(m.infoContent, "left", 200, m.background)
+        moveNode(m.infoContent, "bottom", 20, m.background)
         ' m.backgroundAnimation.control = "start"
     else
         m.notes.closed = true

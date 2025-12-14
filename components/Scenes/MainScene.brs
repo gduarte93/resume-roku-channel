@@ -22,9 +22,6 @@ sub onItemSelected(itemSelected)
     if m.moreInfoModal <> invalid AND (m.currentTile.programID <> invalid AND m.currentTile.programID <> "") then
         jsonString = ReadAsciiFile("pkg:" + m.currentTile.programID)
         jsonObj = ParseJson(jsonString)
-
-        print m.currentTile.programID
-        print jsonObj
         
         if jsonObj <> invalid then
             m.moreInfoModal.title = jsonObj.header?.title
@@ -74,7 +71,7 @@ sub onRowItemFocused(event)
     end if
 
     if m.previewLabel?.boundingRect?()?.height <> invalid then
-        m.previewLabel.translation = [20, 430 - m.previewLabel?.boundingRect?()?.height]
+        m.previewLabel.translation = [40, 430 - m.previewLabel?.boundingRect?()?.height]
     end if
     
 end sub

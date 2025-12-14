@@ -1,6 +1,7 @@
 sub init()
-    m.NOTE_WIDTH = 180
+    m.NOTE_WIDTH = 200
     m.NOTES_MARGIN = 10
+    m.FONT_SIZE = 12
 
     m.nodeArray = []
     m.top.observeField("closed", "onClosedChange")
@@ -20,7 +21,7 @@ sub onNotesArrayChange()
         title.text = note.title
         title.width = m.NOTE_WIDTH
         title.font = "font:TinyBoldSystemFont"
-        title.font.size = 10
+        title.font.size = m.FONT_SIZE
 
         if m.nodeArray.Count() > 0 then
             lastNode = m.nodeArray.peek()
@@ -39,9 +40,9 @@ sub onNotesArrayChange()
         description.text = note.description
         description.width = m.NOTE_WIDTH
         description.translation = [0, title.translation[1] + 16]
-        description.font.size = 10
+        description.font.size = m.FONT_SIZE
         description.wrap = true
-        description.maxLines = 3
+        description.maxLines = 4
 
         border = CreateObject("roSGNode", "Rectangle")
         border.width = m.NOTE_WIDTH

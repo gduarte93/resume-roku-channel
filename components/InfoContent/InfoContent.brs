@@ -1,7 +1,8 @@
 sub init()
     m.INFO_WIDTH = 400
     m.PARAGRAPH_MARGIN = 12
-    m.CENTER_GAP = 40
+    m.CENTER_GAP = 30
+    m.FONT_SIZE = 12
 
     m.nodeArrayLeft = []
     m.nodeArrayRight = []
@@ -13,7 +14,7 @@ sub onLeftArrayChange(event)
         title.text = data.title
         title.width = m.INFO_WIDTH
         title.font = "font:TinyBoldSystemFont"
-        title.font.size = 10
+        title.font.size = m.FONT_SIZE
 
         if m.nodeArrayLeft.Count() > 0 then
             lastNode = m.nodeArrayLeft.peek()
@@ -32,7 +33,7 @@ sub onLeftArrayChange(event)
         description.text = replace(data.description, "<br/>", chr(10))
         description.width = m.INFO_WIDTH
         description.translation = [0, title.translation[1] + m.PARAGRAPH_MARGIN * 2]
-        description.font.size = 10
+        description.font.size = m.FONT_SIZE
         description.wrap = true
 
         m.nodeArrayLeft.push({title: title, description: description})
@@ -49,7 +50,7 @@ sub onRightArrayChange(event)
         title.text = data.title
         title.width = m.INFO_WIDTH
         title.font = "font:TinyBoldSystemFont"
-        title.font.size = 10
+        title.font.size = m.FONT_SIZE
 
         if m.nodeArrayRight.Count() > 0 then
             lastNode = m.nodeArrayRight.peek()
@@ -68,7 +69,7 @@ sub onRightArrayChange(event)
         description.text = replace(data.description, "<br/>", chr(10))
         description.width = m.INFO_WIDTH
         description.translation = [m.INFO_WIDTH + m.CENTER_GAP, title.translation[1] + m.PARAGRAPH_MARGIN * 2]
-        description.font.size = 10
+        description.font.size = m.FONT_SIZE
         description.wrap = true
         ' description.maxLines = 3
 
