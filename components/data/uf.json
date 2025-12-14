@@ -1,0 +1,196 @@
+{
+    "id": "uf",
+    "header": {
+        "title": "University of Florida",
+        "subtitle": "2012-2015",
+        "background": {
+            "small": "https://res.cloudinary.com/dwkr3rvtr/image/upload/w_1440,c_limit,dpr_auto,f_auto/TheSwamp_pm3lwa",
+            "medium": "https://res.cloudinary.com/dwkr3rvtr/image/upload/w_1440,c_limit,dpr_auto,f_auto/TheSwamp_pm3lwa",
+            "large": "https://res.cloudinary.com/dwkr3rvtr/image/upload/w_2048,c_limit,dpr_auto,f_auto/TheSwamp_pm3lwa"
+        },
+        "backgroundColor": "0x0021A5",
+        "info": {
+            "color": {
+                "primary": "0xFFFFFF",
+                "secondary": "0xFA4616",
+                "tertiary": "0x80BE63"
+            },
+            "title": "Courses",
+            "description": "Bachelors of Science in Computer Science",
+            "story": {
+                "column1": [
+                    {
+                        "title": "",
+                        "description": "Applications of Discrete Structures<br/>COT 3100<br/>Computational Linear Algebra<br/>MAS 3114<br/>Computer Organization<br/>CDA 3101<br/>Data Structures and Algorithms<br/>COP 3530<br/>Digital Logic & Computer Systems<br/>EEL 3701C<br/>Information Systems and Databases I<br/>CIS 4301<br/>Introduction to Numerical Analysis<br/>MAD 4401"
+                    }
+                ],
+                "column2": [
+                    {
+                        "title": "",
+                        "description": "Introduction to Software Engineering<br/>CEN 3031<br/>Operating Systems<br/>COP 4600<br/>Programming for CIS Majors I (Java)<br/>COP 3502<br/>Programming for CIS Majors II (Java)<br/>COP 3503<br/>Programming using C<br/>COP 3275<br/>Senior Project<br/>CIS 4914"
+                    }
+                ]
+            }
+        },
+        "blurbs": [
+            {
+                "title": "Location",
+                "description": "Gainesville, FL"
+            },
+            {
+                "title": "CIS 4914",
+                "description": "Created an online music locker desktop application for windows using C# and AWS"
+            },
+            {
+                "title": "CIS 4301",
+                "description": "Worked in a team of 4 to develop a temporary social media app using PostgreSQL and web technologies"
+            },
+            {
+                "title": "CEN 3031",
+                "description": "Worked in a team of 6 to develop a scheduling web app for a local business"
+            }
+        ]
+    },
+    "content": [
+        {
+            "type": "showcase",
+            "data": {
+                "imgPos": "left",
+                "images": [
+                    {
+                        "publicId": "Senior_Project_Slide1",
+                        "src": "https://res.cloudinary.com/dwkr3rvtr/image/upload/v1590375416/Senior_Project_Slide1.png",
+                        "alt": "Slide 1"
+                    },
+                    {
+                        "publicId": "Senior_Project_Slide2",
+                        "src": "https://res.cloudinary.com/dwkr3rvtr/image/upload/v1590375419/Senior_Project_Slide2.png",
+                        "alt": "Slide 2"
+                    },
+                    {
+                        "publicId": "Senior_Project_Slide3",
+                        "src": "https://res.cloudinary.com/dwkr3rvtr/image/upload/v1590375422/Senior_Project_Slide3.png",
+                        "alt": "Slide 3"
+                    },
+                    {
+                        "publicId": "Senior_Project_Slide4",
+                        "src": "https://res.cloudinary.com/dwkr3rvtr/image/upload/v1590375417/Senior_Project_Slide4.png",
+                        "alt": "Slide 4"
+                    },
+                    {
+                        "publicId": "Senior_Project_Slide5",
+                        "src": "https://res.cloudinary.com/dwkr3rvtr/image/upload/v1590375414/Senior_Project_Slide5.png",
+                        "alt": "Slide 5"
+                    },
+                    {
+                        "publicId": "Senior_Project_Slide6",
+                        "src": "https://res.cloudinary.com/dwkr3rvtr/image/upload/v1590375419/Senior_Project_Slide6.png",
+                        "alt": "Slide 6"
+                    },
+                    {
+                        "publicId": "Senior_Project_Slide7",
+                        "src": "https://res.cloudinary.com/dwkr3rvtr/image/upload/v1590375417/Senior_Project_Slide7.png",
+                        "alt": "Slide 7"
+                    },
+                    {
+                        "publicId": "Senior_Project_Slide8",
+                        "src": "https://res.cloudinary.com/dwkr3rvtr/image/upload/v1590375418/Senior_Project_Slide8.png",
+                        "alt": "Slide 8"
+                    },
+                    {
+                        "publicId": "Senior_Project_Slide9",
+                        "src": "https://res.cloudinary.com/dwkr3rvtr/image/upload/v1590375417/Senior_Project_Slide9.png",
+                        "alt": "Slide 9"
+                    },
+                    {
+                        "publicId": "Senior_Project_Slide10",
+                        "src": "https://res.cloudinary.com/dwkr3rvtr/image/upload/v1590375415/Senior_Project_Slide10.png",
+                        "alt": "Slide 10"
+                    }
+                ],
+                "title": "CIS 4914",
+                "description": "For my senior project, I created an online music locker to be able to listen to your music collection wherever you have access to the internet, as well as free up hard drive space.<br/>The app is a Microsoft Windows desktop application built using C# with Visual Studio, PostgreSQL, and stored on AWS.<br/>Users are able to register for an account and log in. They are able to upload songs, play songs, create playlists, delete playlists, remove songs from a playlist, and delete songs from their library. They are also able to sort songs by name, artist, album, and length as well as search via a search bar."
+            }
+        },
+        {
+            "type": "showcase",
+            "data": {
+                "imgPos": "right",
+                "images": [
+                    {
+                        "publicId": "Dressolutions_HomePage_jbf0w2",
+                        "src": "https://res.cloudinary.com/dwkr3rvtr/image/upload/v1590379187/Dressolutions_HomePage_jbf0w2.png",
+                        "alt": "Home Page"
+                    },
+                    {
+                        "publicId": "Dressolutions_RegisterModal_jfhkev",
+                        "src": "https://res.cloudinary.com/dwkr3rvtr/image/upload/v1590379184/Dressolutions_RegisterModal_jfhkev.png",
+                        "alt": "Register Modal"
+                    },
+                    {
+                        "publicId": "Dressolutions_LoggedIn_eeekfx",
+                        "src": "https://res.cloudinary.com/dwkr3rvtr/image/upload/v1590379188/Dressolutions_LoggedIn_eeekfx.png",
+                        "alt": "Logged In"
+                    },
+                    {
+                        "publicId": "Dressolutions_Countdown_pb7evn",
+                        "src": "https://res.cloudinary.com/dwkr3rvtr/image/upload/v1590379189/Dressolutions_Countdown_pb7evn.png",
+                        "alt": "Clicking on an outfit starts the timer before you can rate"
+                    },
+                    {
+                        "publicId": "Dressolutions_Voted_kexkpg",
+                        "src": "https://res.cloudinary.com/dwkr3rvtr/image/upload/v1590379182/Dressolutions_Voted_kexkpg.png",
+                        "alt": "After rating, clicking on an outfit brings up all the info"
+                    },
+                    {
+                        "publicId": "Dressolutions_NavDropdown_kfpgxo",
+                        "src": "https://res.cloudinary.com/dwkr3rvtr/image/upload/v1590379185/Dressolutions_NavDropdown_kfpgxo.png",
+                        "alt": "Nav Dropdown"
+                    },
+                    {
+                        "publicId": "Dressolutions_TopUsers_tvvbjk",
+                        "src": "https://res.cloudinary.com/dwkr3rvtr/image/upload/v1590379188/Dressolutions_TopUsers_tvvbjk.png",
+                        "alt": "Top Users Page"
+                    },
+                    {
+                        "publicId": "Dressolutions_TopStores_eyfpka",
+                        "src": "https://res.cloudinary.com/dwkr3rvtr/image/upload/v1590379191/Dressolutions_TopStores_eyfpka.png",
+                        "alt": "Top Store Page"
+                    },
+                    {
+                        "publicId": "Dressolutions_CheapestDresses_x9kgfc",
+                        "src": "https://res.cloudinary.com/dwkr3rvtr/image/upload/v1590379185/Dressolutions_CheapestDresses_x9kgfc.png",
+                        "alt": "Cheapest Dresses Page"
+                    },
+                    {
+                        "publicId": "Dressolutions_MostRecent_xrvmsl",
+                        "src": "https://res.cloudinary.com/dwkr3rvtr/image/upload/v1590379188/Dressolutions_MostRecent_xrvmsl.png",
+                        "alt": "Most Recent Page"
+                    }
+                ],
+                "title": "CIS 4301",
+                "description": "Worked in a team of four to develop a temporary social media application. The app, Dressolutions, allows users to submit pictures of clothes for other members to rate.<br/>The temporariness comes from other users only being able to see the outfit for 10 seconds before giving their rating. Because people don’t have a long time to stare at an outfit to make up their minds, the rating is a good quantifier for the initial impression it makes.<br/>We used a PostgreSQL relational database to store user and clothes data. Users were able to have friends, which we were able to pull through database queries. Other things we queried the database for were top users, top stores, cheapest stores, top outfits, most recent outfits, as well as search.<br/>We used PHP for the back end, and HTML, CSS, and JavaScript for the front end.<br/>My responsibilities for this project were designing and coding the front end. This includes the home page, register modal, header, dropdown, and dress cards. As well as the client side functionality such as bringing up a modal on card click."
+            }
+        },
+        {
+            "type": "showcase",
+            "data": {
+                "imgPos": "left",
+                "images": [
+                    {
+                        "publicId": "CEN3031_CalendarPage_cdkl6l",
+                        "src": "https://res.cloudinary.com/dwkr3rvtr/image/upload/v1590379184/CEN3031_CalendarPage_cdkl6l.png",
+                        "alt": "Calendar Page, showing the top nav, and right panel"
+                    },
+                    {
+                        "publicId": "CEN3031_Settings_Logout_Btn_keyozw",
+                        "src": "https://res.cloudinary.com/dwkr3rvtr/image/upload/v1590379187/CEN3031_Settings_Logout_Btn_keyozw.png",
+                        "alt": "Settings and Logout buttons"
+                    }
+                ],
+                "title": "CEN 3031",
+                "description": "Worked with a team of six to develop a fullstack web app for a local construction business. The application is a tool they would use internally to schedule and keep track of jobs.<br/>The integration with Google Calendar would show when jobs were to take place, and the integration with Google Maps would show in what specific location.<br/>I worked on the front end, using HTML, CSS, and JavaScript to create the UI, and integrating Google Calendar."
+            }
+        }
+    ]
+}

@@ -1,0 +1,125 @@
+{
+    "id": "disney",
+    "header": {
+        "title": "Direct-to-Consumer & International",
+        "subtitle": "2018 - 2022",
+        "background": {
+            "small": "https://res.cloudinary.com/dwkr3rvtr/image/upload/w_1440,c_limit,dpr_auto,f_auto/dtci_slide_jnxk6t",
+            "medium": "https://res.cloudinary.com/dwkr3rvtr/image/upload/w_1440,c_limit,dpr_auto,f_auto/dtci_slide_jnxk6t",
+            "large": "https://res.cloudinary.com/dwkr3rvtr/image/upload/w_2048,c_limit,dpr_auto,f_auto/dtci_slide_jnxk6t"
+        },
+        "backgroundColor": "0xA4DEf9",
+        "info": {
+            "color": {
+                "primary": "0x444444",
+                "secondary": "0xFFFFFF",
+                "tertiary": "0x444444"
+            },
+            "title": "",
+            "description": "Software Engineer II - Front End",
+            "story": {
+                "column1": [
+                    {
+                        "title": "What I Do",
+                        "description": "With the transition from ESPN to DTCI, I got the opportunity to join the Site Development team. This team is focused on creating new features and products. And, because we are now part of DTCI, that means we have access to not just ESPN products, but to all of Disney’s global brands."
+                    },
+                    {
+                        "title": "Early On",
+                        "description": "One of my first projects here was in helping with the migration of ESPN from our old servers to AWS. This included updating our routes in haproxy with lua and regex, as well as adding test coverage for those new rules. I worked with other teams to help validate the new routes by running automated tests, allowing for rapid turn around."
+                    },
+                    {
+                        "title": "The Shift",
+                        "description": "After that project, my focus shifted away from ESPN, and towards other brands. It became more and more apparent that we were now a part of a much larger Disney organization."
+                    }
+                ],
+                "column2": [
+                    {
+                        "title": "",
+                        "description": "At ESPN we created our own front end framework based around Node, React, and MobX. A large goal for us was to migrate our other properties to the same stack. Getting everyone to use the same technology would allow for the ability to share code and components between brands.<br/><br/>As part of this effort, I worked on migrating the ABC local news sites, abc.com, and disneynow.com, as well as helping with the migrations of National Geographic TV and FX."
+                    },
+                    {
+                        "title": "Recently",
+                        "description": "Most recently, I worked on the new redesigned version of ESPN Watch, using our latest React framework. There, I worked on the listings page, the roadblock page, the schedule page, and integrating analytics for page and video tracking."
+                    }
+                ]
+            }
+        },
+        "blurbs": [
+            {
+                "title": "Location",
+                "description": "Bristol, CT"
+            },
+            {
+                "title": "Brand Migrations",
+                "description": "Worked on migrating legacy sites for ABC, Disneynow, Nat Geo TV, and FX to our new tech stack"
+            },
+            {
+                "title": "ESPN Watch",
+                "description": "Was on the team responsible for the redesigned Watch web experience"
+            }
+        ]
+    },
+    "content": [
+        {
+            "type": "showcase",
+            "data": {
+                "imgPos": "left",
+                "images": [
+                    {
+                        "publicId": "abc_local_stations_lzq8hn",
+                        "src": "https://res.cloudinary.com/dwkr3rvtr/image/upload/v1590642025/abc_local_stations_lzq8hn.png",
+                        "alt": "ABC local news stations"
+                    },
+                    {
+                        "publicId": "disneynow_s3wdxm",
+                        "src": "https://res.cloudinary.com/dwkr3rvtr/image/upload/v1590642017/disneynow_s3wdxm.png",
+                        "alt": "disneynow.com"
+                    },
+                    {
+                        "publicId": "abc_mzfzbg",
+                        "src": "https://res.cloudinary.com/dwkr3rvtr/image/upload/v1590642017/abc_mzfzbg.png",
+                        "alt": "abc.com"
+                    },
+                    {
+                        "publicId": "natgeo_tv_s4xdpb",
+                        "src": "https://res.cloudinary.com/dwkr3rvtr/image/upload/v1590642003/natgeo_tv_s4xdpb.png",
+                        "alt": "National Geographic TV"
+                    }
+
+                ],
+                "title": "Brand Migrations",
+                "description": "For the ABC local news sites, I created React components based on their legacy HTML and CSS.<br/><br/>On disneynow.com, I added lazy loading to tile groups, worked on profile personalization, and implemented Adobe Primetime Authentication for streaming video content.<br/><br/>On abc.com, I worked with the video player team to get live video running, implemented geo location detection, and rewrote our in-house telemetry analytics code so that it could be standardized and brand agnostic."
+            }
+        },
+        {
+            "type": "showcase",
+            "data": {
+                "imgPos": "right",
+                "images": [
+                    {
+                        "publicId": "watch_redesign_home_wtfciw",
+                        "src": "https://res.cloudinary.com/dwkr3rvtr/image/upload/v1590640391/watch_redesign_home_wtfciw.png",
+                        "alt": "Redesigned Watch for web"
+                    },
+                    {
+                        "publicId": "watch_redesign_listing_f2hjm4",
+                        "src": "https://res.cloudinary.com/dwkr3rvtr/image/upload/v1590639930/watch_redesign_listing_f2hjm4.png",
+                        "alt": "A listing page"
+                    },
+                    {
+                        "publicId": "watch_redesign_schedule_n4yq1x",
+                        "src": "https://res.cloudinary.com/dwkr3rvtr/image/upload/v1590639928/watch_redesign_schedule_n4yq1x.png",
+                        "alt": "The schedule page"
+                    },
+                    {
+                        "publicId": "watch_redesign_roadblock_xrtnoh",
+                        "src": "https://res.cloudinary.com/dwkr3rvtr/image/upload/v1590639929/watch_redesign_roadblock_xrtnoh.png",
+                        "alt": "The roadblock page"
+                    }
+                ],
+                "title": "Watch Web Redesign",
+                "description": "Goals for this project were to migrate Watch to use our new tech stack, as well as to update the UI to match our Mobile and OTT apps.<br/><br/>I worked on the listings page, the roadblock page, the schedule page, and integrating page and video analytics."
+            }
+        }
+    ]
+}
