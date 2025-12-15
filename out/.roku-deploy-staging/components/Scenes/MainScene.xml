@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="MainScene" extends="Scene"> 
+	<children>
+		<Poster
+			id="backgroundImage"
+			loadDisplayMode="scaleToZoom"
+			translation="[0, -200]"
+		/>
+		<Poster
+			id="backgroundGradient"
+			width="1280"
+			height="720"
+			translation="[0, 0]"
+			uri="pkg:/images/BackgroundGradient.png"
+		/>
+		<Label
+			id="previewLabel"
+            text=""
+            color="0xFFFFFF"
+            width="600"
+            wrap="true"
+            translation="[20, 330]"
+		/>
+
+		<RowList
+			id="tileRow1"
+			translation="[0, 0]"
+			itemComponentName="Tile"
+			numRows="1"
+			showRowLabel="[false]"
+			rowLabelOffset="[[0, 16]]"
+
+			itemSize="[1500, 270]"
+			rowItemSize="[[300, 169]]"
+			itemSpacing="[0, 0]"
+			rowItemSpacing="[[28, 0]]"
+
+			drawFocusFeedback="true"
+			drawFocusFeedbackOnTop="true"
+			rowFocusAnimationStyle="floatingFocus"
+			vertFocusAnimationStyle="fixedFocus"
+
+			translation="[40, 450]"
+		/>
+
+		<MoreInfoModal
+			id="moreInfoModal"
+			backgroundColor="0xA4dEf9"
+			mainColor="0x444444"
+			secondaryColor="0xFFFFFF"
+			title=""
+			subtitle=""
+			workTitle=""
+			notesArray=""
+			leftArray=""
+			rightArray=""
+		/>
+    </children>
+
+	<script type="text/brightscript" uri="MainScene.brs"></script>
+</component>

@@ -1,0 +1,101 @@
+{
+    "id": "pixelsupply",
+    "audio": "pkg:/components/audio/train.mp3",
+    "header": {
+        "title": "Pixel Supply Co",
+        "subtitle": "2014 - 2016",
+        "background": {
+            "small": "https://res.cloudinary.com/dwkr3rvtr/image/upload/w_1440,c_limit,dpr_auto,f_auto/miracle_mile_vilvft",
+            "medium": "https://res.cloudinary.com/dwkr3rvtr/image/upload/w_1440,c_limit,dpr_auto,f_auto/miracle_mile_vilvft",
+            "large": "https://res.cloudinary.com/dwkr3rvtr/image/upload/w_2048,c_limit,dpr_auto,f_auto/miracle_mile_vilvft"
+        },
+        "backgroundColor": "0xE0C588",
+        "backgroundPosition": "bottom",
+        "info": {
+            "color": {
+                "primary": "0x053E1F",
+                "secondary": "0xD91515",
+                "tertiary": "0x053E1F"
+            },
+            "title": "",
+            "description": "Web Developer",
+            "story": {
+                "column1": [
+                    {
+                        "title": "",
+                        "description": "I joined Pixel Supply towards the end of my sophomore year, as an intern. After graduating, I joined them full-time, working in Coral Gables on Miracle Mile. They are certified Shopify experts, who specialize in setting up online stores for businesses.<br/><br/>Being a small company, with a start-up mentality, I was allowed to see and touch many aspects of the business. I was there when clients walked in to discuss their vision for the site. I saw that vision gradually turn into page mockups. And then, in what became my main role, I turned those mocks into fully functioning and responsive websites using HTML, CSS, JavaScript, and Liquid."
+                    }
+                ],
+                "column2": [
+                    {
+                        "title": "",
+                        "description": "Another big part of my role at Pixel Supply, was app development. I was the lead full stack developer on UrPic, a Ruby on Rails app for the Shopify app store. UrPic allows store owners to sell products on their Instagram accounts by linking them to their store. I wrote the front end, back end, implemented a PostreSQL database, integrated it with Instagram’s API, and hosted it on Heroku."
+                    }
+                ]
+            }
+        },
+        "blurbs": [
+            {
+                "title": "Location",
+                "description": "Miami, FL"
+            },
+            {
+                "title": "UrPic",
+                "description": "Was the lead full stack developer behind the Ruby on Rails app, UrPic, on the Shopify app store"
+            }
+        ]
+    },
+    "content": [
+        {
+            "type": "showcase",
+            "data": {
+                "imgPos": "left",
+                "images": [
+                    {
+                        "publicId": "urpic_signup_page_j26uza",
+                        "src": "https://res.cloudinary.com/dwkr3rvtr/image/upload/v1590473920/urpic_signup_page_j26uza.png",
+                        "alt": "Sign up site"
+                    },
+                    {
+                        "publicId": "dashboard_view_with_hover_cpnnnp",
+                        "src": "https://res.cloudinary.com/dwkr3rvtr/image/upload/v1590473745/dashboard_view_with_hover_cpnnnp.png",
+                        "alt": "Admin Dashboard"
+                    },
+                    {
+                        "publicId": "dashboard_view_with_naming_houlgq",
+                        "src": "https://res.cloudinary.com/dwkr3rvtr/image/upload/v1590473744/dashboard_view_with_naming_houlgq.png",
+                        "alt": "Naming a new feed"
+                    },
+                    {
+                        "publicId": "edit_view_seaching_hashtags_ggs3aj",
+                        "src": "https://res.cloudinary.com/dwkr3rvtr/image/upload/v1590473747/edit_view_seaching_hashtags_ggs3aj.png",
+                        "alt": "Searching Instagram posts via hashtag"
+                    },
+                    {
+                        "publicId": "edit_view_linking_products_rv4d3c",
+                        "src": "https://res.cloudinary.com/dwkr3rvtr/image/upload/v1590473735/edit_view_linking_products_rv4d3c.png",
+                        "alt": "Manually linking products to their product page"
+                    },
+                    {
+                        "publicId": "grid_theme_tsj07f",
+                        "src": "https://res.cloudinary.com/dwkr3rvtr/image/upload/v1590473747/grid_theme_tsj07f.png",
+                        "alt": "Client facing feed with the Grid theme"
+                    },
+                    {
+                        "publicId": "slider_theme_p9phir",
+                        "src": "https://res.cloudinary.com/dwkr3rvtr/image/upload/v1590473742/slider_theme_p9phir.png",
+                        "alt": "Client facing feed with the Slider theme"
+                    },
+                    {
+                        "publicId": "product_modal_kp3unq",
+                        "src": "https://res.cloudinary.com/dwkr3rvtr/image/upload/v1590473747/product_modal_kp3unq.png",
+                        "alt": "Clicking on a post brings up a modal with the name and link to the products on the right"
+                    }
+
+                ],
+                "title": "UrPic",
+                "description": "A Shopify app built on Ruby on Rails.<br/><br/>Allows shop owners to link their Instagram accounts to their Shopify stores. Provides them an admin dashboard to curate which posts to show on the site, and an interface to link product pages to relevant posts. As well as allowing for automatic page linking via hashtags while on “autopilot” mode.<br/><br/>Once the set up work is completed, it provides an easy embed script which can be placed anywhere on the site to allow shoppers to see their promoted posts. These posts can be displayed in a slide or grid view, both with infinite scroll options."
+            }
+        }
+    ]
+}
